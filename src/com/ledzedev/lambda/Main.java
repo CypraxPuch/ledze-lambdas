@@ -15,14 +15,14 @@ public class Main {
         MiPrimerLambda miPrimerLambdaDeclaracionAnonima = new MiPrimerLambda() {
             @Override
             public void metodoSinParametros() {
-                System.out.println("Hola mundo con declaración anónima.");
+                System.out.println("Hola mundo ledze con declaración anónima.");
             }
         };
         miPrimerLambdaDeclaracionAnonima.metodoSinParametros();
         System.out.println("/***********************************/");
 
         //Ahora el mismo método es implementado con el paradigma de los lambdas.
-        MiPrimerLambda miPrimerLambda = () -> System.out.println("Hola mundo con lambdas.");
+        MiPrimerLambda miPrimerLambda = () -> System.out.println("Hola mundo ledze con lambdas.");
         miPrimerLambda.metodoSinParametros();
 
         System.out.println("/***********************************/");
@@ -38,23 +38,23 @@ public class Main {
         int resultadoMultiplica = opMultiplica.operacion(5,5);
         int resultadoDivide = opDivide.operacion(5,5);
 
-        System.out.println("Misma clase, distinto objeto diferente implementación. Resultado suma = "+resultadoSuma);
-        System.out.println("Misma clase, distinto objeto diferente implementación. Resultado resta = "+resultadoResta);
-        System.out.println("Misma clase, distinto objeto diferente implementación. Resultado multiplicación = "+resultadoMultiplica);
-        System.out.println("Misma clase, distinto objeto diferente implementación. Resultado división = "+resultadoDivide);
+        System.out.println("Lambda ledze: Misma clase, distinto objeto diferente implementación. Resultado suma = "+resultadoSuma);
+        System.out.println("Lambda ledze: Misma clase, distinto objeto diferente implementación. Resultado resta = "+resultadoResta);
+        System.out.println("Lambda ledze: Misma clase, distinto objeto diferente implementación. Resultado multiplicación = "+resultadoMultiplica);
+        System.out.println("Lambda ledze: Misma clase, distinto objeto diferente implementación. Resultado división = "+resultadoDivide);
         System.out.println("/***********************************/");
 
         //También puedes sobre-escribir el método para que se ejecute tu implementación.
         OperacionBasicaLambda opGenerica;
 
         opGenerica = (a,b) -> a+b;
-        System.out.println("Mismo objeto con diferente implementación. Resultado = "+opGenerica.operacion(10,2));
+        System.out.println("Lambda ledze: Mismo objeto con diferente implementación. Resultado = "+opGenerica.operacion(10,2));
         opGenerica = (a,b) -> a-b;
-        System.out.println("Mismo objeto con diferente implementación. Resultado = "+opGenerica.operacion(10,2));
+        System.out.println("Lambda ledze: Mismo objeto con diferente implementación. Resultado = "+opGenerica.operacion(10,2));
         opGenerica = (a,b) -> a*b;
-        System.out.println("Mismo objeto con diferente implementación. Resultado = "+opGenerica.operacion(10,2));
+        System.out.println("Lambda ledze: Mismo objeto con diferente implementación. Resultado = "+opGenerica.operacion(10,2));
         opGenerica = (a,b) -> a/b;
-        System.out.println("Mismo objeto con diferente implementación. Resultado = "+opGenerica.operacion(10,2));
+        System.out.println("Lambda ledze: Mismo objeto con diferente implementación. Resultado = "+opGenerica.operacion(10,2));
     }
 }
 
